@@ -58,7 +58,7 @@
 		var followerTpl;
 		for (var i = 0; i < followers.length; i++) {
 			var f = followers[i];
-			followerTpl = $(template).copy();
+			followerTpl = $(template).clone();
 			followerTpl.find('h3').text(f.login);
 			followerTpl.find('img').attr('src',f.avatar_url);
 			/*demas atributos*/
